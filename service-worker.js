@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hoangluu.github.io/precache-manifest.1a8a97f4869cce6a98e6686a51aad55a.js"
+  "/hoangluu.github.io/precache-manifest.bbbbe185aa2dea275561770344dd5655.js"
 );
 
 self.addEventListener('message', (event) => {
