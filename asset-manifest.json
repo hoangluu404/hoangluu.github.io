@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/hoangluu.github.io/static/css/main.5f361e03.chunk.css",
-    "main.js": "/hoangluu.github.io/static/js/main.041f355e.chunk.js",
-    "main.js.map": "/hoangluu.github.io/static/js/main.041f355e.chunk.js.map",
+    "main.css": "/hoangluu.github.io/static/css/main.bc48c7ce.chunk.css",
+    "main.js": "/hoangluu.github.io/static/js/main.ddd0e13a.chunk.js",
+    "main.js.map": "/hoangluu.github.io/static/js/main.ddd0e13a.chunk.js.map",
     "runtime-main.js": "/hoangluu.github.io/static/js/runtime-main.c53b3fbf.js",
     "runtime-main.js.map": "/hoangluu.github.io/static/js/runtime-main.c53b3fbf.js.map",
-    "static/js/2.444a539d.chunk.js": "/hoangluu.github.io/static/js/2.444a539d.chunk.js",
-    "static/js/2.444a539d.chunk.js.map": "/hoangluu.github.io/static/js/2.444a539d.chunk.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/hoangluu.github.io/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.287323dc.chunk.js": "/hoangluu.github.io/static/js/2.287323dc.chunk.js",
+    "static/js/2.287323dc.chunk.js.map": "/hoangluu.github.io/static/js/2.287323dc.chunk.js.map",
     "index.html": "/hoangluu.github.io/index.html",
-    "precache-manifest.d055b9322f195bee782a33491b962ee5.js": "/hoangluu.github.io/precache-manifest.d055b9322f195bee782a33491b962ee5.js",
+    "precache-manifest.a8f08fc8b5f6783c91f19a77d5430ce1.js": "/hoangluu.github.io/precache-manifest.a8f08fc8b5f6783c91f19a77d5430ce1.js",
     "service-worker.js": "/hoangluu.github.io/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/hoangluu.github.io/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.444a539d.chunk.js.LICENSE.txt": "/hoangluu.github.io/static/js/2.444a539d.chunk.js.LICENSE.txt",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/hoangluu.github.io/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.bc48c7ce.chunk.css.map": "/hoangluu.github.io/static/css/main.bc48c7ce.chunk.css.map",
+    "static/js/2.287323dc.chunk.js.LICENSE.txt": "/hoangluu.github.io/static/js/2.287323dc.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/hoangluu.github.io/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c53b3fbf.js",
-    "static/js/2.444a539d.chunk.js",
-    "static/css/main.5f361e03.chunk.css",
-    "static/js/main.041f355e.chunk.js"
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.287323dc.chunk.js",
+    "static/css/main.bc48c7ce.chunk.css",
+    "static/js/main.ddd0e13a.chunk.js"
   ]
 }
