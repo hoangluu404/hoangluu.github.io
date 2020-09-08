@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import Contacts from './components/contactForm'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter as Router, Route, Switch, Link, Redirect} from 'react-router-dom';
+import Projects from './pages/index';
+import PageNotFound from './pages/404';
+import Resume from './pages/resume';
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>Hoang Luu</code>
-        </p>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Projects}/>
+          <Route exact path="/resume" component={Resume}/>
 
 
-      </header>
-      <body>
-        <Contacts label="Test"/>
-        
-      </body>
+          <Route exact path="/404" component={PageNotFound}/>
+          <Redirect to="/404"/>
+        </Switch>
+      </Router>
     </div>
   );
 }
+
+
 
 export default App;

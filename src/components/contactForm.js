@@ -1,27 +1,52 @@
 import React , {Component} from 'react';
 
-
 class ContactForm extends Component{
     
     constructor(props){
         super(props)
 
         this.state = {
-            username: '',
-            option: ''
+            first_name: '',
+            last_name: '',
+            email: '',
+            message: '',
+            option: 'option1'
         }
     }
-
-    handleValueChange = (event) => {
+    
+    handleFirstNameChange = (event) => {
         this.setState(
             {
-                username: event.target.value
+                first_name: event.target.value,
             }
         )
     }
 
+    handleLastNameChange = (event) => {
+        this.setState(
+            {
+                last_name: event.target.value,
+            }
+        )
+    }
+
+    handleEmailChange = (event) => {
+        this.setState(
+            {
+                email: event.target.value,
+            }
+        )
+    }
+
+    handleMessageChange = (event) => {
+        this.setState(
+            {
+                message: event.target.value,
+            }
+        )
+    }
     handleSubmit = event => {
-        alert(`${this.state.username} chooses ${this.state.option}`)
+        alert(`${this.state.last_name}, ${this.state.first_name} at ${this.state.email} chooses ${this.state.option}\nMessage: ${this.state.message}`)
         event.preventDefault()
     }
 
@@ -40,8 +65,9 @@ class ContactForm extends Component{
             <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>
-                        <input type="text" value={this.state.username} onChange={this.handleValueChange} />
-                        <input type="submit" value="submit button"/>
+                        First Name> <input label="Name" type="text" value={this.state.first_name} onChange={this.handleFirstNameChange} />
+                        Last Name> <input type="text" value={this.state.last_name} onChange={this.handleLastNameChange} />
+                        Email> <input type="text" value={this.state.email} onChange={this.handleEmailChange} />
                     </label>
                 </div>
                 <div>
@@ -50,6 +76,14 @@ class ContactForm extends Component{
                         <option value='option2'>Option 2</option>
                         <option value='option3'>Option 3</option>
                     </select>
+                </div>
+                <div>
+                    <label>
+                        Message><textarea type="text" value={this.state.message} onChange={this.handleMessageChange} />
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="submit button"/>
                 </div>
             </form>
         );
