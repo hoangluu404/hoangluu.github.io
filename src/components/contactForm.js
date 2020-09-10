@@ -1,4 +1,5 @@
 import React , {Component} from 'react';
+import emailjs from 'emailjs-com';
 
 class ContactForm extends Component{
     
@@ -14,6 +15,18 @@ class ContactForm extends Component{
         }
     }
     
+    sendEmail(e){
+        
+
+        emailjs.sendForm('gmail', 'template_hoangluu404', e.target, 'user_otENxMGrIjk8QTSwe7Iwv')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+        
+    }
+
     handleFirstNameChange = (event) => {
         this.setState(
             {
@@ -45,6 +58,7 @@ class ContactForm extends Component{
             }
         )
     }
+
     handleSubmit = event => {
         alert(`${this.state.last_name}, ${this.state.first_name} at ${this.state.email} chooses ${this.state.option}\nMessage: ${this.state.message}`)
         event.preventDefault()
@@ -60,34 +74,27 @@ class ContactForm extends Component{
 
     render(){
         return(
+            <form onSubmit={this.sendEmail}>
+                <div>
+                    <label style={{display: "flex", justifyContent:"flex-start"}}>
+                        <div><input type="text" name="first_name" placeholder="First Name" value={this.state.first_name} onChange={this.handleFirstNameChange} /></div>
+                        <div><input type="text" name="last_name" placeholder="Last Name" value={this.state.last_name} onChange={this.handleLastNameChange} /></div>
+                        
+                    </label>
+                    <div><input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} /></div>
+                </div>
 
-
-            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>
-                        First Name> <input label="Name" type="text" value={this.state.first_name} onChange={this.handleFirstNameChange} />
-                        Last Name> <input type="text" value={this.state.last_name} onChange={this.handleLastNameChange} />
-                        Email> <input type="text" value={this.state.email} onChange={this.handleEmailChange} />
+                        <textarea type="text" name="message" placeholder="Enter a message" value={this.state.message} onChange={this.handleMessageChange} />
                     </label>
                 </div>
                 <div>
-                    <select value={this.state.option} onChange={this.handleSelectChange}>
-                        <option value='option1'>Option 1</option>
-                        <option value='option2'>Option 2</option>
-                        <option value='option3'>Option 3</option>
-                    </select>
-                </div>
-                <div>
-                    <label>
-                        Message><textarea type="text" value={this.state.message} onChange={this.handleMessageChange} />
-                    </label>
-                </div>
-                <div>
-                    <input type="submit" value="submit button"/>
+                    <input type="submit" value="Submit"/>
                 </div>
             </form>
-        );
+            );
     }
 }
 
-export default ContactForm
+export default ContactForm;

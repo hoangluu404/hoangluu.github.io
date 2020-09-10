@@ -15,15 +15,17 @@ class Video extends React.Component {
 
     render() {
       const opts = {
-        height: '390',
-        width: '640',
+        // resolution of S20
+        height: this.props.height, //'500',
+        width: this.props.width, //'225',
+        
         playerVars: {
           // https://developers.google.com/youtube/player_parameters
           autoplay: 0,
         },
       };
    
-      return <YouTube videoId={this.props.videoID} opts={opts} onReady={this._onReady} />;
+      return <YouTube videoId={this.props.videoID} opts={opts} onReady={this._onReady}/>;
     }
    
     
