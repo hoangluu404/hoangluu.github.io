@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "171f67cd3ef9914caa6a1711c68949cc",
+    "revision": "001a20b5fd3d855e3376dcecfca5c248",
     "url": "/hoangluu.github.io/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hoangluu.github.io/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "47fb98a0d1a7d01c89f9",
+    "revision": "eff821eece3c8ca9f482",
     "url": "/hoangluu.github.io/static/css/main.faef7e05.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hoangluu.github.io/static/js/2.742a8a8b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "47fb98a0d1a7d01c89f9",
-    "url": "/hoangluu.github.io/static/js/main.d2d3dc46.chunk.js"
+    "revision": "eff821eece3c8ca9f482",
+    "url": "/hoangluu.github.io/static/js/main.31101992.chunk.js"
   },
   {
     "revision": "5de44dfa075874210151",
