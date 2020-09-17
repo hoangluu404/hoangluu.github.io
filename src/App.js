@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter as Router, Route, Switch, Link, Redirect} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import Projects from './pages/index';
 import PageNotFound from './pages/404';
 import Resume from './pages/resume';

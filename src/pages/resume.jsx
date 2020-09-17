@@ -16,7 +16,7 @@ const Resume = () => {
                     <Card>
                         <h5>Education</h5>
                         <div><b>The University of Texas at Arlington</b>  <small> - Expected Spring 2021</small></div>
-                        <div><small>B.S. in Computer Science Engineering</small></div>
+                        <div><small><b><i>B.S. in Computer Science Engineering</i></b></small></div>
                     </Card>
                     <hr></hr>
                     <Card>
@@ -67,7 +67,7 @@ const Resume = () => {
                                 <p>
                                     <li><b>Web Developer: </b><small align="right">August 2019 - present</small></li>
                                     <div><i>Ly Agency - Arlingtion, TX</i></div>
-                                    <div>•	Design and Maintain an insurance agency website <a href="http://www.lyagency.com">www.lyagency.com</a></div>
+                                    <div>•	Design and Maintain an insurance agency website <a href="http://www.lyagency.com">www.lyagency.com</a> and  <a href="http://www.obamacaregarden.com">www.obamacaregarden.com</a></div>
                                     <div>•	Developed a mass texting program that is integrated with Twillio</div>
                                 </p>
                                 <p>

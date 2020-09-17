@@ -1,8 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-import { render } from '@testing-library/react';
-import {Link} from 'react-router-dom';
-import Projects from '../pages/resume';
+import { Navbar, Nav } from 'react-bootstrap';
 
 const NavigationBar = () =>{
     return(

@@ -6,6 +6,7 @@ import logo from '../logo.svg';
 import Card from '../components/card';
 import {Link} from 'react-router-dom';
 
+
 const Projects = () => {
     return (
         <div>
@@ -13,7 +14,7 @@ const Projects = () => {
             <NavigationBar/>
 
             <div className="App" style={{transform: 'scale(0.5)'}}>
-            
+
                 <img src={logo} className="App-logo" alt="logo"/>
             </div>
             <div>
@@ -24,7 +25,7 @@ const Projects = () => {
                 <p>
                 <code>by Hoang Luu</code>
                 </p>
-
+                <p>This website is still under development</p>
                 </header>
                 <body className="App">
                     <Card>
@@ -34,7 +35,7 @@ const Projects = () => {
                                     <b>Personal project: Journey to Android</b>
                                 </div>
                                 <div>
-                                    <small><i>Project in Kotlin - tested on Samsung Galaxy S20</i></small>
+                                    <small><i>Project in Kotlin - recorded on Samsung Galaxy S20</i></small>
                                 </div>
                                 <div>
                                     Demo includes:
@@ -68,7 +69,29 @@ const Projects = () => {
                                         <li>Simple Contact form</li>
                                         <li>Simple Google map integration</li>
                                         <li>Simple Calender/Schedule integration</li>
-                                        <li>Instagram username look up</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div><YoutubeVideo videoID="VSw0XDLmJl8" height="315" width="500"/></div>
+                            
+                        </div>
+                    </Card>
+                    <Card>
+                        <div style={{display: "flex", justifyContent: "center", margin:"1%"}}>
+                            <div style={{margin: "1%", textAlign: "left"}}> 
+                                <div>
+                                    <b>Texting services</b>
+                                </div>
+                                <div>
+                                    <small><i>Mass texting program</i></small>
+                                </div>
+                                <div>
+                                    Demo includes:
+                                    <ul>
+                                        <li>Sending a customized message to a number</li>
+                                        <li>Sending message to all numbers within an Excel File</li>
+                                        <li>Keep track of which number was sent to in Excel File</li>
                                     </ul>
                                 </div>
                             </div>
@@ -79,7 +102,7 @@ const Projects = () => {
                         
                         
                     </Card>
-                    <p>This website is still under development - Hoang</p>
+                    
                 </body>
         
             </div>

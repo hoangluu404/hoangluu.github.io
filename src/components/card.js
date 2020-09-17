@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 
 const Card = (props) => (
     
@@ -10,7 +9,9 @@ const Card = (props) => (
             padding: "1%",
             height: "auto",
             width: "fit",
-            boxShadow: "0px 5px 10px 2px rgba(0,0,0,0.25)"
+            boxShadow: "0px 5px 10px 2px rgba(0,0,0,0.25)",
+            borderRadius: "5px"
+        
         }}>
             {props.children}
             </div>

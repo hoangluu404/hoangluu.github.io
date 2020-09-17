@@ -1,5 +1,7 @@
 import React , {Component} from 'react';
 import emailjs from 'emailjs-com';
+import Coordinates from './coordinate';
+
 
 class ContactForm extends Component{
     
@@ -76,22 +78,24 @@ class ContactForm extends Component{
         return(
             <form onSubmit={this.sendEmail}>
                 <div>
-                    <label style={{display: "flex", justifyContent:"flex-start"}}>
-                        <div><input type="text" name="first_name" placeholder="First Name" value={this.state.first_name} onChange={this.handleFirstNameChange} /></div>
+                    
+                    <label style={{display: "flex", justifyContent: "center"}}>
+                        <div><input type="text" name="first_name" placeholder="First Name" value={this.state.first_name} onChange={this.handleFirstNameChange} required/></div>
                         <div><input type="text" name="last_name" placeholder="Last Name" value={this.state.last_name} onChange={this.handleLastNameChange} /></div>
                         
                     </label>
-                    <div><input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} /></div>
+                    <div><input type="email" name="email" placeholder="Email" value={this.state.email} onChange={this.handleEmailChange} required/></div>
                 </div>
 
                 <div>
                     <label>
-                        <textarea type="text" name="message" placeholder="Enter a message" value={this.state.message} onChange={this.handleMessageChange} />
+                        <textarea type="text" name="message" placeholder="Enter a message" value={this.state.message} onChange={this.handleMessageChange} required/>
                     </label>
                 </div>
                 <div>
                     <input type="submit" value="Submit"/>
                 </div>
+                <Coordinates/>
             </form>
             );
     }
